@@ -1,0 +1,102 @@
+######## To create a user: ########
+
+POST request to http://localhost:3000//users
+headers: {
+  'Content-Type': 'application/json',
+},
+body: {
+  "username":"username1",
+  "role":1
+}
+
+######## To login: ########
+
+POST request to http://localhost:3000//login
+headers: {
+  'Content-Type': 'application/json',
+},
+body: 
+{
+  "username":"actual_username"
+}
+The response:
+{
+    "user": {
+        "id": 1,
+        "username": "username1",
+        "created_at": "2023-10-26T19:03:28.016Z",
+        "updated_at": "2023-10-26T19:03:28.016Z",
+        "role": 1
+    },
+    "token": "eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoxfQ.oT7kSePnYs7eVIsRIzIi0UEC7XBclsrO3qrnXwic8Zg" ### THIS IS THE TOKEN
+}
+
+######## To make any other call to the API, you must add a header: ########
+headers: {
+  'Authorization': `bearer ${token}`
+}
+The token is taken from the response of the login or create call.
+
+######## To create a parachute: ########
+POST request to http://localhost:3000//parachutes
+headers: {
+  'Content-Type': 'application/json',
+  'Authorization': `bearer ${token}`
+},
+Body:
+{
+  "name": "Not-Parachute",
+  "city": "Valdivia",
+  "rent": 9.9,
+  "description": "A not-parachute for people who doesn't want to stop their falling",
+  "min_duration": 1
+}
+
+######## To get all parachutes: ########
+GET request to http://localhost:3000//parachutes
+headers: {
+  'Authorization': `bearer ${token}`
+}
+
+######## To get a single parachute: ########
+GET request to http://localhost:3000//parachutes/(:id)
+headers: {
+  'Authorization': `bearer ${token}`
+}
+
+######## To remove a single parachute: ########
+DELETE request to http://localhost:3000//parachutes/(:id)
+headers: {
+  'Authorization': `bearer ${token}`
+}
+
+######## To create a reservation ########
+POST request to http://localhost:3000//parachutes
+headers: {
+  'Content-Type': 'application/json',
+  'Authorization': `bearer ${token}`
+},
+Body:
+{
+  "date_and_time": "2023-10-26T20:05:28.016Z",
+  "parachute_id": 2,
+  "duration": 1
+}
+
+######## To get all reservations: ########
+GET request to http://localhost:3000//reservations
+headers: {
+  'Authorization': `bearer ${token}`
+}
+
+######## To get a single reservation: ########
+GET request to http://localhost:3000//reservations/(:id)
+headers: {
+  'Authorization': `bearer ${token}`
+}
+
+######## To remove a single reservation: ########
+DELETE request to http://localhost:3000//reservations/(:id)
+headers: {
+  'Authorization': `bearer ${token}`
+}
