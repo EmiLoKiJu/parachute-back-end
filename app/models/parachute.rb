@@ -1,0 +1,2 @@
+class Parachute < ApplicationRecord
+end
