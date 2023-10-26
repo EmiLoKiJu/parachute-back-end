@@ -1,14 +1,14 @@
 class UsersController < ApplicationController
   before_action :authorized, only: [:auto_login]
 
-  #REGISTER
+  # REGISTER
   def create
     @user = User.create(user_params)
     if @user.valid?
-      token = enconde_token({user_id: @user.id})
-      render json: {user: @user, token: token}
+      token = enconde_token({ user_id: @user.id })
+      render json: { user: @user, token: }
     else
-      render json: {error: 'Invalid username'}
+      render json: { error: 'Invalid username' }
     end
   end
 
@@ -17,10 +17,10 @@ class UsersController < ApplicationController
     @user = User.find_by(username: params[:username])
 
     if @user
-      token = encode_token({user_id: @user.id})
-      render json: {user: @user, token: token}
+      token = encode_token({ user_id: @user.id })
+      render json: { user: @user, token: }
     else
-      render json: {error: 'Invalid username'}
+      render json: { error: 'Invalid username' }
     end
   end
 
