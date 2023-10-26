@@ -1,0 +1,2 @@
+class ParachutesController < ApplicationController
+end
