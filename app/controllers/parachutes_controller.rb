@@ -1,5 +1,5 @@
 class ParachutesController < ApplicationController
-  before_action :set_parachute, only: %i[ show destroy ]
+  before_action :set_parachute, only: %i[show destroy]
   before_action :authorized
 
   def index
