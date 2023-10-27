@@ -1,7 +1,5 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
-#   Character.create(name: "Luke", movie: movies.first)
+user = User.create(username: 'username1', role: 1)
+parachute1 = Parachute.create(name: 'Not-parachute', city: 'Valdivia', rent: 9.9, description: 'A parachute that does not want yo keep you in the air. Perfect for people who likes to stay grounded', min-duration: 1)
+parachute2 = Parachute.create(name: 'Parachute ak-47', city: 'Valdivia', rent: 19.9, description: 'This parachute will blow up your emotions! (and maybe your body)', min-duration: 1)
+parachute3 = Parachute.create(name: 'Pearachute', city: 'Valdivia', rent: 49.9, description: 'For fruits lovers, this is a pear-ticular parachute made of pears', min-duration: 1)
+parachute4 = Parachute.create(name: 'Super Sky-driving', city: 'Valdivia', rent: 99.9, description: 'Why would you dive the sky if you can drive it right?', min-duration: 1)

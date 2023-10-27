@@ -21,9 +21,9 @@ default: &default
   # https://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
 
-  username: emilokiju
-  password: PiCo123+
-  host: localhost
+  # username: emilokiju
+  # password: PiCo123+
+  # host: localhost
 
 development:
   <<: *default
@@ -85,4 +85,4 @@ test:
 #
 production:
   <<: *default
-  database: parachute_back_end_production
+  url: <%= ENV['DATABASE_URL'] %>

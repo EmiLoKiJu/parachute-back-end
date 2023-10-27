@@ -10,14 +10,38 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_10_26_011209) do
+ActiveRecord::Schema[7.0].define(version: 2023_10_26_174811) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "parachutes", force: :cascade do |t|
+    t.string "name"
+    t.string "city"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.decimal "rent"
+    t.text "description"
+    t.integer "min_duration"
+  end
+
+  create_table "reservations", force: :cascade do |t|
+    t.datetime "date_and_time"
+    t.bigint "user_id", null: false
+    t.bigint "parachute_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer "duration"
+    t.index ["parachute_id"], name: "index_reservations_on_parachute_id"
+    t.index ["user_id"], name: "index_reservations_on_user_id"
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "username"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "role"
   end
 
+  add_foreign_key "reservations", "parachutes"
+  add_foreign_key "reservations", "users"
 end
