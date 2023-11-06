@@ -23,11 +23,14 @@ class ParachutesController < ApplicationController
   end
 
   def update
+    @parachute = Parachute.find(params[:id])
     if @parachute.update(parachute_params)
       render json: @parachute
     else
       render json: @parachute.errors, status: :unprocessable_entity
     end
+  rescue ActiveRecord::RecordNotFound
+    render json: { error: 'Parachute not found' }, status: :not_found
   end
 
   def destroy
