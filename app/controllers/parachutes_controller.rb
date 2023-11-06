@@ -35,6 +35,15 @@ class ParachutesController < ApplicationController
 
   def destroy
     @parachute.destroy
+    render json: { message: 'Parachute destroyed successfully' }, status: :ok
+  rescue ActiveRecord::RecordNotFound
+    render json: { error: 'Parachute not found' }, status: :not_found
+  end
+
+  def destroyAll
+    Parachute.where.not(id: [0, 1, 2, 3]).destroy_all
+    ActiveRecord::Base.connection.reset_pk_sequence!('parachutes')
+    render json: { message: 'Parachutes destroyed successfully' }, status: :ok
   end
 
   private
