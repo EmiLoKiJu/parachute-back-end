@@ -112,9 +112,14 @@ Not implemented tests
 ## 👥 Authors <a name="authors"></a>
 
 👤 **Gabriel Rozas**
-- GitHub: [@EmiLoKiJu](https://github.com/EmiLoKiJu)
-- Twitter: [@GabrielRozas12](https://twitter.com/GabrielRozas12)
+- GitHub:   [@EmiLoKiJu](https://github.com/EmiLoKiJu)
+- Twitter:  [@GabrielRozas12](https://twitter.com/GabrielRozas12)
 - LinkedIn: [grozas](https://www.linkedin.com/in/grozas/)
+
+👤 **Qurban Ali Safari**
+- GitHub:   [Ali-0111](https://github.com/Ali-0111)
+- Twitter:  [qurban_safari](https://twitter.com/qurban_safari)
+- LinkedIn: [Safari](https://www.linkedin.com/in/ali-safari-linked)
 
 <p align="right">(<a href="#parachute-back-end">back to top</a>)</p>
 
