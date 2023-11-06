@@ -41,7 +41,7 @@ class ParachutesController < ApplicationController
   end
 
   def destroyAll
-    Parachute.where.not(id: [0, 1, 2, 3]).destroy_all
+    Parachute.where.not(id: [1, 2, 3, 4]).destroy_all
     ActiveRecord::Base.connection.reset_pk_sequence!('parachutes')
     render json: { message: 'Parachutes destroyed successfully' }, status: :ok
   end
