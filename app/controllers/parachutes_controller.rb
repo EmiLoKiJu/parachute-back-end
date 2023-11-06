@@ -22,6 +22,14 @@ class ParachutesController < ApplicationController
     end
   end
 
+  def update
+    if @parachute.update(parachute_params)
+      render json: @parachute
+    else
+      render json: @parachute.errors, status: :unprocessable_entity
+    end
+  end
+
   def destroy
     @parachute.destroy
   end
