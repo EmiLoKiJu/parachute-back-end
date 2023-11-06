@@ -42,6 +42,6 @@ class ParachutesController < ApplicationController
   end
 
   def parachute_params
-    params.require(:parachute).permit(:name, :city, :rent, :description, :min_duration)
+    params.require(:parachute).permit(:name, :city, :rent, :description, :min_duration, :photo_link)
   end
 end
