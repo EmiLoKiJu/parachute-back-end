@@ -1,5 +1,5 @@
 class ParachutesController < ApplicationController
-  before_action :set_parachute, only: %i[show destroy]
+  before_action :set_parachute, only: %i[show destroy update]
   before_action :authorized
 
   def index
@@ -23,7 +23,6 @@ class ParachutesController < ApplicationController
   end
 
   def update
-    @parachute = Parachute.find(params[:id])
     if @parachute.update(parachute_params)
       render json: @parachute
     else

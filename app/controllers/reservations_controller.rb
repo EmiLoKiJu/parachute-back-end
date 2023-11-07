@@ -25,6 +25,9 @@ class ReservationsController < ApplicationController
 
   def destroy
     @reservation.destroy
+    render json: { message: 'Reservation Cancelled successfully' }, status: :ok
+  rescue ActiveRecord::RecordNotFound
+    render json: { error: 'Reservation not found' }, status: :not_found
   end
 
   private

@@ -22,7 +22,8 @@
 <!-- PROJECT DESCRIPTION -->
 
 # 📖 [parachute-back-end] <a name="about-project"></a>
-parachute-back-end, is the database for the parachute project, which is way to reserve a parachute to do activities with it.
+parachute-back-end, is the back-end repository for the parachute project, which is way to reserve a parachute to do activities with it.
+You can see the front-end repository [here](https://github.com/EmiLoKiJu/parachute-front-end)
 
 ## 🛠 Built With <a name="built-with"></a>
 
