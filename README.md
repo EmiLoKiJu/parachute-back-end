@@ -5,6 +5,7 @@
 - [📖 About the Project](#about-project)
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
+    - [API-link](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -53,9 +54,19 @@ parachute-back-end, is the database for the parachute project, which is way to r
 
 ### Key Features <a name="key-features"></a>
 
-- **ROR**
+- **Ruby on Rails**
+- **JWT**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+### API-link <a name="live-demo"></a>
+
+Feel free to use the API-link of this project
+(deployed with render.com)
+
+https://parachute-back-end.onrender.com
+
+More info in how to use the API in the [API_doc](./API_doc.txt)
 
 ## 💻 Getting Started <a name="getting-started"></a>
 <!-- https://github.com/EmiLoKiJu/parachute-back-end -->
@@ -176,6 +187,8 @@ If you like this project give it a star ⭐️
 <!-- ACKNOWLEDGEMENTS -->
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+Credits to [Murat Korkmaz](https://www.behance.net/muratk), author of the (original design)[https://www.behance.net/gallery/26425031/Vespa-Responsive-Redesign]
 
 ** I would like to thank to Microverse for giving this inspiring project **
 

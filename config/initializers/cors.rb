@@ -7,7 +7,7 @@
 
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
-    origins 'localhost:5173'
+    origins 'localhost:5173', 'https://parachute-front-end.onrender.com'
 
     resource '*',
       headers: :any,
