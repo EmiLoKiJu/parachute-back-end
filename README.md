@@ -74,6 +74,8 @@ More info in how to use the API in the [API_doc](./API_doc.txt)
 
 [Link to the back-end kanban board](https://github.com/users/EmiLoKiJu/projects/2/views/1)
 
+[Link to the screenshot of the initial state of the kanban board](https://user-images.githubusercontent.com/84760694/278126987-d8abe5f7-6806-4f15-b128-aff749e5e0c8.png)
+
 ## 💻 Getting Started <a name="getting-started"></a>
 <!-- https://github.com/EmiLoKiJu/parachute-back-end -->
 
