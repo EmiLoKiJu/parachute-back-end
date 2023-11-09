@@ -64,10 +64,7 @@ You can see the front-end repository [here](https://github.com/EmiLoKiJu/parachu
 ### API-link <a name="live-demo"></a>
 
 Feel free to use the API-link of this project
-(deployed with render.com)
-
-https://parachute-back-end.onrender.com
-
+[deployed with render.com](https://parachute-back-end.onrender.com)
 More info in how to use the API in the [API_doc](./API_doc.txt)
 
 ### Kanban Board <a name="kanban-board"></a>
@@ -76,7 +73,7 @@ More info in how to use the API in the [API_doc](./API_doc.txt)
 
 [Link to the screenshot of the initial state of the kanban board](https://user-images.githubusercontent.com/84760694/278126987-d8abe5f7-6806-4f15-b128-aff749e5e0c8.png)
 
-### - The final number of team members are two people.
+🤝 The final number of team members are two people.
 ## 💻 Getting Started <a name="getting-started"></a>
 <!-- https://github.com/EmiLoKiJu/parachute-back-end -->
 
