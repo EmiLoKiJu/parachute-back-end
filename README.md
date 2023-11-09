@@ -6,6 +6,7 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [API-link](#live-demo)
+    - [Kanban board](#kanban-board)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -68,6 +69,10 @@ Feel free to use the API-link of this project
 https://parachute-back-end.onrender.com
 
 More info in how to use the API in the [API_doc](./API_doc.txt)
+
+### Kanban Board <a name="kanban-board"></a>
+
+[Link to the back-end kanban board](https://github.com/users/EmiLoKiJu/projects/2/views/1)
 
 ## 💻 Getting Started <a name="getting-started"></a>
 <!-- https://github.com/EmiLoKiJu/parachute-back-end -->
