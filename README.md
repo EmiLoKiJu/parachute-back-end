@@ -22,7 +22,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [parachute-back-end] <a name="about-project"></a>
+# 📖 parachute-back-end <a name="about-project"></a>
 parachute-back-end, is the back-end repository for the parachute project, which is way to reserve a parachute to do activities with it.
 You can see the front-end repository [here](https://github.com/EmiLoKiJu/parachute-front-end)
 
@@ -76,6 +76,7 @@ More info in how to use the API in the [API_doc](./API_doc.txt)
 
 [Link to the screenshot of the initial state of the kanban board](https://user-images.githubusercontent.com/84760694/278126987-d8abe5f7-6806-4f15-b128-aff749e5e0c8.png)
 
+### - The final number of team members are two people.
 ## 💻 Getting Started <a name="getting-started"></a>
 <!-- https://github.com/EmiLoKiJu/parachute-back-end -->
 
